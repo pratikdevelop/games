@@ -15,6 +15,9 @@ if (isset($_SESSION) && isset($_SESSION['loggedIn'])) {
 
       <a onClick="logout()" class=" cursor-pointer h-10 w-10"><img title="logout" class ="rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCZiXqqCmDHi79ClIg2vo40a2gtsSfIXexd4-S_A4&s" alt="" srcset="">
       </a>
+      <button type="button" data-collapse-toggle="mega-menu-icons"  class="p-2 font-normal ml-2  bg-green-600 text-center text-white  capitalize cursor-pointer h-10 w-10 rounded-full"><span> <?php  echo $_SESSION['user']['first_name'][0]?>
+   </span>    </a>
+  
       <?php
       }
        else {
